@@ -18,3 +18,13 @@ REST-Rant is an app where users can review restaurants.
 
 
 Your places should have a name (string), city (string), state (string), cuisines (string) and a pic (string).
+
+
+Louis order:
+router.get('/', (req, res) => {
+router.post('/', (req, res) => {
+router.get('/new', (req, res) => {
+router.get('/:id', (req, res) => {
+router.get('/:id/edit', (req, res) => {
+router.delete('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
