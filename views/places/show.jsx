@@ -99,7 +99,7 @@ function show (data) {
                 </div>
                 <div className="form-group col-sm-2">
                   <label htmlFor="rant">Rant?
-                  <input type="checkbox" id="rant" name="rant" className="form-control" />
+                  <input type="checkbox"/>
                   </label>
                 </div>
               </div>
