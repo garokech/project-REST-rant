@@ -12,6 +12,19 @@ function new_form (data) {
     }
     return (
         <Def>
+            <nav>
+                    <ul>
+                        <li>
+                            <a href='/'>Home</a>
+                        </li>
+                        <li>
+                            <a href='/places'>Places</a>
+                        </li>
+                        <li>
+                            <a href='/places/new'>Add Place</a>
+                        </li>
+                    </ul>
+            </nav>
             <main>
                 <h1>Add a New Place</h1>
                 {message}
