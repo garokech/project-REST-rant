@@ -1,22 +1,9 @@
 const React = require('react')
-const Def = require('../default.jsx')
+const Def = require('./default.jsx')
 
 function edit_form (data) {
     return (
         <Def>
-            <nav>
-                    <ul>
-                        <li>
-                            <a href='/'>Home</a>
-                        </li>
-                        <li>
-                            <a href='/places'>Places</a>
-                        </li>
-                        <li>
-                            <a href='/places/new'>Add Place</a>
-                        </li>
-                    </ul>
-            </nav>
           <main>
             <h1>Edit Place</h1>
             <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
@@ -29,8 +16,8 @@ function edit_form (data) {
                         <label htmlFor="pic">Place Picture</label>
                         <input className="form-control" id="pic" name="pic" value={data.place.pic} />
                     </div>
-                </div>
-                <div className="row">
+                    </div>
+                    <div className="row">
                     <div className="form-group col-sm-6">
                         <label htmlFor="city">City</label>
                         <input className="form-control" id="city" name="city" value={data.place.city} />
@@ -39,11 +26,17 @@ function edit_form (data) {
                         <label htmlFor="state">State</label>
                         <input className="form-control" id="state" name="state" value={data.place.state} />
                     </div>
-                </div>
-                <div className="form-group">
+                    </div>
+                    <div className="row">
+                    <div className="form-group col-sm-6">
                     <label htmlFor="cuisines">Cuisines</label>
                     <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required />
-                </div>
+                    </div>
+                    <div className="form-group col-sm-6">
+                        <label htmlFor="founded">Founded</label>
+                        <input className="form-control" id="founded" name="founded" value={data.place.founded} />
+                    </div>
+                    </div>
                 <input className="btn btn-primary" type="submit" value="Add Place" />
             </form>
           </main>
